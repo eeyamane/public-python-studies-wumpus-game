@@ -17,13 +17,17 @@ As I started to learn Python, I just wanted to create something. Remembering the
 
 I divided the work in three modules:
 
-- wumpus_game_model: some basic classes used to model the problem. Besides, it includes some simple models with the "engines" to run the game in text mode. Although these "engines" don't work now (because after using them to test things, I changed the directory structure), it is not hard to change the code.
+- wumpus_game_model: some basic classes used to model the problem. Besides, it includes some simple models with the "engines" to run the game in text mode. Although these "engines" don't work now (because after using them to test things, I changed the directory structure), the old cold is included in directory wumpus-teste
 
 - wumpus_world_builder: some simple GUI to design an instance of the game. You can save a file with the game and load it in the other module. The file uses a simple JSON format. You can run the program with command (from outside the directory): 
 py -m wumpus_world_builder.gui-world-builder
 
 - wumpus_game_grided_gui: it contains a GUI to play the game, along with image files used. You can run the program with command (from outside the directory): 
 py -m wumpus_game_grided_gui.wumpus-game-gui
+
+- wumpus-teste: this is not a module, but an older version of files in wumpus_game_model. It also contains a script to run a text-based version of the game. You can run with the command:
+cd wumpus-teste
+py wumpus_run.py
 
 Original image files are from https://www.flaticon.com/free-icons. Some images where changed, but you can see I am not a designer. Original links are in .py file.
 
